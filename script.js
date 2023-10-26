@@ -20,13 +20,23 @@ var bgColor = document.querySelector("body");
 
 // 5. Modify the following array to add at least 3 facts about the T. Rex that aren't so frightening. They don't need to be real facts.
 
+
 let dinoFacts = [
-    "Fact 1",
-    "Fact 2",
-    "Fact 3"
+    "Their arms are very short",
+    "They are one of the biggest animals to ever exist",
+    "They are very cute"
 ]
 
 // 6. Replace the facts on the page with our new array of facts:
+
+var funFacts = document.querySelector("#facts");
+    funFacts.innerHTML = ""
+
+    for (let i = 0; i < dinoFacts.length; i++) {
+
+    }
+
+
 // 6.1 First, use querySelector to create a variable for the list.
 
 // 6.2 Then, remove all of the current content by setting your list variable's innerHTML to a blank string (variable.innerHTML = "")
