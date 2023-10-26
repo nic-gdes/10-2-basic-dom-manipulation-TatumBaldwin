@@ -2,11 +2,21 @@
 
 // 1. Link your javascript in the HTML above the closing </body> tag.
 
+
 // 2. Use querySelector to create a variable that contains the page's h1 title, and change the title using textContent into something a bit nicer.
+
+var heading = document.querySelector("#page-title");
+   text = heading.textContent = "Happy Boi";
 
 // 3. Use querySelector to create a variable that contains the dinosaur image, and change the src to "./images/cute-dino.jpeg" so he doesn't look so mean. You can change an item's src by just calling the src method (item.src = "new_src";)
 
+var dinoImage = document.querySelector("#dino-img");
+    dinoImage.src = "./images/cute-dino.jpeg";
+
 // 4. Use querySelector to create a variable for the document body, and change the background color to something less harsh and intense.
+
+var bgColor = document.querySelector("body");
+    bgColor.style.backgroundColor = "#90EE90";
 
 // 5. Modify the following array to add at least 3 facts about the T. Rex that aren't so frightening. They don't need to be real facts.
 
