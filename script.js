@@ -22,27 +22,27 @@ var bgColor = document.querySelector("body");
 
 
 let dinoFacts = [
-    "1. Their arms are very short",
-    "2. They are one of the biggest animals to ever exist",
-    "3. They are very cute"
+    "Their arms are very short",
+    "They are one of the biggest animals to ever exist",
+    "They are very cute"
 ]
 
 // 6. Replace the facts on the page with our new array of facts:
 // 6.1 First, use querySelector to create a variable for the list.
 
-const funFacts = document.querySelector("#facts"); //represents current list
+const priorFacts = document.querySelector("#meanFacts"); //represents current list
     
 // 6.2 Then, remove all of the current content by setting your list variable's innerHTML to a blank string (variable.innerHTML = "")
 
-funFacts.innerHTML = "" //take content out of list
+priorFacts.innerHTML = "" //take content out of list
 
   
 // 6.3 Then loop through the dinoFacts array, and appendChild each fact to the list variable. Remember you can loop through an array by using array.length to get the total number of items in the array to end the loop;
 
-  for (let i = 0; i < dinoFacts.length; i++) {
-        let funFacts = dinoFacts[i];
-        const newItem = document.createElement("li");
-        newItem.textContent = dinoFacts;
-        funFacts.appendChild(newItem);
+  for (let facts of dinoFacts) {
+        let newItem = document.createElement("li");
+        newItem.textContent = facts;
+
+        priorFacts.appendChild(newItem);
         
     }
